@@ -5,24 +5,21 @@ const counter = document.querySelector('#value');
 
 let counterValue = 0;
 
-const addValueClick = (event) => {
-
-    console.log(event.currentTarget);
+decrementBnEl.addEventListener('click', () => {
+   
     counterValue -= 1;
     counter.textContent = counterValue;
-};
+});
 
-const removeValueClick = event => {
-
-    console.log(event.currentTarget);
+incrementBnEl.addEventListener('click', () => {
+   
     counterValue += 1;
     counter.textContent = counterValue;
-};
+});
 
 
 
-decrementBnEl.addEventListener('click', addValueClick);      
-incrementBnEl.addEventListener('click', removeValueClick);
+
 
 
 
