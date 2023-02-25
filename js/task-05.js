@@ -11,3 +11,7 @@ inputEl.addEventListener('input', (event) => {
     spanTitleEl.textContent = event.currentTarget.value;
 });
 
+inputEl.addEventListener('blur', (event) => {
+    event.target.value = '';
+    spanTitleEl.textContent = 'Anonymous';
+})
