@@ -21,7 +21,3 @@ textInputEl.addEventListener('blur', (event) => {
     
 });
 
-// при фокусе на инпут строка очистится для ввода новых значений
-textInputEl.addEventListener('focus', (event) => {
-    event.target.value = '';
-})

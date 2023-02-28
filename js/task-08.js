@@ -10,7 +10,7 @@ function handleForm(event) {
     
     const { elements: { email, password } } = event.currentTarget; 
     
-    if (email.value === "" && password.value === "" ) {
+    if (email.value === "" || password.value === "" ) {
         alert('Заполни все поля ввода');
         return;
     } else {
